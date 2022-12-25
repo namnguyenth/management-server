@@ -8,7 +8,7 @@ Setting up environment
   Edit postgres info as needed```
  
 Migrate DB
-Run these commands:
+  Run these commands:
 
   ```flask db init```
 
