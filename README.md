@@ -3,9 +3,11 @@ Requirements
   ```MySql```
 
 Setting up environment
-  ```Create .env file in the main folder.
+  ```
+  Create .env file in the main folder.
   Copy the content from .env.example file to .env file.
-  Edit postgres info as needed```
+  Edit postgres info as needed
+  ```
  
 Migrate DB
   Run these commands:
