@@ -1,5 +1,7 @@
 Requirements
+
   ```Python 3.8```
+  
   ```MySql```
 
 Setting up environment
@@ -19,4 +21,5 @@ Migrate DB
   ```flask db upgrade```
   
 Run Server
+
   ```flask run```
