@@ -4,6 +4,7 @@ import unittest
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 from app.main.model import User
+from app.main.model import Person
 
 from app import blueprint
 
