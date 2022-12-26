@@ -9,7 +9,24 @@ from marshmallow import ValidationError
 
 
 def get_all_persons():
-    return None
+    person = Person.query.all()
+    response = [
+        {
+            "first_name": item.first_name,
+            "last_name": item.last_name,
+            "email": item.email,
+            "address": item.address,
+            "phone": item.phone,
+            "avatar": item.avatar,
+            "created_date": item.created_date,
+            "created_user": item.created_user,
+            "updated_date": item.updated_date,
+            "updated_user": item.updated_user,
+            "is_deleted": item.is_deleted
+        }
+        for item in person
+    ]
+    return response
 
 
 def create_person(data):

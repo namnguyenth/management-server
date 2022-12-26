@@ -1,8 +1,9 @@
-from flask import request
+from flask import request, Flask
 from flask_restplus import Resource
 
 from app.main.service.person_service import get_all_persons, create_person
 from app.main.util.person_dto import PersonDto
+from flask_cors import CORS
 
 api = PersonDto.api
 _person = PersonDto.user
